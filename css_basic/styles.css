@@ -47,3 +47,55 @@ button {
 button:hover {
     background-color: #155ab6;
 }
+
+/* styles.css - Flexbox layout */
+
+/* Make the body a flex container in column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body fills viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Make main a flex container in row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Auto height/width */
+    gap: 20px; /* Optional spacing between article and aside */
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Article takes 2/3 of the width, scrollable */
+article {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid #ddd; /* Optional styling */
+}
+
+/* Aside takes 1/3 of the width, scrollable */
+aside {
+    flex: 1;
+    background-color: #fafafa;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid #ddd; /* Optional styling */
+}
+
+/* Optional: Footer spacing */
+footer {
+    margin-top: auto; /* Push footer to bottom if main grows */
+}
