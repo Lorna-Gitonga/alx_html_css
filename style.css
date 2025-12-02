@@ -1,0 +1,146 @@
+/* Reset / Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #f9f7f7;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+header img {
+  height: 40px; /* Check Figma */
+}
+
+header nav ul {
+  display: flex;
+  gap: 40px; /* from Figma */
+}
+
+header nav a {
+  text-decoration: none;
+  color: #7f7a7a;
+  font-weight: 600;
+}
+/* BANNER */
+.hero {
+  background-image: url("images/banner.jpg"); /* update filename */
+  background-size: cover;
+  background-position: center;
+  height: 90vh; /* or the exact Figma value */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px; /* match Figma */
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #C271FF; /* check Figma */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* QUOTES */
+.quotes {
+  background: #C271FF;
+  color: white;
+  padding: 60px 0;
+}
+
+.quote-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.quote-box img {
+  border-radius: 50%;
+  width: 150px;
+}
+/* VIDEOS */
+.videos {
+  padding: 80px 0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+/* MEMBERSHIP */
+.membership {
+  background: #071629;
+  color: white;
+  padding: 80px 0;
+}
+
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  color: black;
+  padding: 30px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+/* FAQ */
+.faq {
+  padding: 80px 0;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+/* FOOTER */
+footer {
+  background: #071629;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
